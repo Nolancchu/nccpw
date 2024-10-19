@@ -2,10 +2,12 @@ import ProjectCard from "./ProjectCard";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { FaReact } from "react-icons/fa";
+import Image from 'next/image'
+
 const ProjectCards = [
     {
       name: "Datasaur Royale",
-      image: <img alt={"Datasaur Royale thumbnail"}/>,
+      image: <Image alt={"Datasaur Royale thumbnail"}/>,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     },
     {

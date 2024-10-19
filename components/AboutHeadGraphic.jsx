@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const AboutHeadGraphic = () => {
   return (
@@ -7,7 +8,7 @@ const AboutHeadGraphic = () => {
                     <span >PROFILE:</span>
         </div>
         <div className="flex flex-col md:flex-row w-full bg-ncc-beige">
-          <img
+          <Image
             src="/React-icon.png"
             width={400}
             className="h-8/12 align-middle mb-12"
