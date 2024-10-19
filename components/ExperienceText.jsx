@@ -37,7 +37,7 @@ const ExperienceText = () => {
                 </div>
                 <div className="w-1 h-[2.5rem] bg-ncc-black ml-4 mr-4"/>
                 <div className="text-[1.3rem] leading-5 xl:leading-[1.4rem] mt-3 flex flex-row -translate-y-2">
-                    <div className="list-disc mr-3"><li>C++</li><li>HTML%</li></div>
+                    <div className="list-disc mr-3"><li>C++</li><li>HTML5</li></div>
                     <div className="list-disc mr-3"><li>Java</li><li>Javascript</li></div>
                     <div className="list-disc mr-3"><li>CSS</li><li>Tailwind</li></div>
                     <div className="list-disc mr-"><li>NextJS</li><li>React</li></div>
