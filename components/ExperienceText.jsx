@@ -11,7 +11,7 @@ const ExperienceText = () => {
     <div>
         <div className="flex flex-col w-full justify-center items-center">
             <div className="text-2xl lg:text-3xl w-7/12 text-center mb-10">
-                Over the years, I've had the privilege to underego a wide variety of experiences, both tech-related and not, experiences like the following...
+                Over the years, I&apos;ve had the privilege to underego a wide variety of experiences, both tech-related and not, experiences like the following...
             </div>
             
 

@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { motion, AnimatePresence, useCycle, rotate} from "framer-motion";
 import { FaReact } from "react-icons/fa";
 import { Inter } from "next/font/google";
+import Link from 'next/link'
 
 const int = Inter ({
     subsets: ['latin'],
@@ -33,13 +34,13 @@ const Navigation = () => {
         >
           <div className="flex flex-row mt-4">
             <div className={int.className}>
-              <a  href="/portfolio" className="text-2xl text-ncc-black mr-4 ml-4 no-underline">Portfolio</a>
+              <Link  href="/portfolio" className="text-2xl text-ncc-black mr-4 ml-4 no-underline">Portfolio</Link>
             </div>
             <div className={int.className}>
-              <a  href="/experience" className="text-2xl text-ncc-black mr-4 ml-4 no-underline">Experience</a>
+              <Link  href="/experience" className="text-2xl text-ncc-black mr-4 ml-4 no-underline">Experience</Link>
             </div>
             <div className={int.className}>
-              <a  href="/about" className="text-2xl text-ncc-black mr-20 ml-4 no-underline">About</a>
+              <Link  href="/about" className="text-2xl text-ncc-black mr-20 ml-4 no-underline">About</Link>
             </div>
           </div>
         </motion.div>
