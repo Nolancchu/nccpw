@@ -26,18 +26,18 @@ const HomePageGraphic = () => {
     <div className="styles.container">
         <div className="flex flex-col relative overflow-x-hidden lg:flex-row  w-full mt-12">
             <StaticElement
-                children={
-                    <ScrollingText
-                        text="Welcome to my website!" 
-                        className="text-ncc-black"
-                        verticalAlign="top"
-                    />}
+                
                 verticalPosition="0"
                 horizontalPosition="10px"
                 width="w-48"
                 zIndex="z-20"
                 className="-top-32 "
             >
+                <ScrollingText
+                    text="Welcome to my website!" 
+                    className="text-ncc-black"
+                    verticalAlign="top"
+                />
             </StaticElement>
             <div className="xl:mt-10 ml-16 w-full lg:w-1/2 z-10" >
                 
