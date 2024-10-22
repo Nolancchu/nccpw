@@ -14,7 +14,7 @@ const Navigation = () => {
     return (
     <div className="w-auto h-full flex flex-col ">
       <div className="w-full h-2 bg-ncc-beige"/>
-      <div className="flex flex-row justify-between mt-8 z-40 mb-12">
+      <div className="flex flex-row justify-between mt-8 z-40 mb-4">
           <motion.div
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}

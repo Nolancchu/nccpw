@@ -39,13 +39,17 @@ const HomePageGraphic = () => {
                     verticalAlign="top"
                 />
             </StaticElement>
-            <div className="xl:mt-10 ml-16 w-full lg:w-1/2 z-10" >
+            <div className="xl:mt-10 ml-16 w-full lg:w-3/4 z-10" >
                 
                 <div className="text-xl lg:text-[0rem]">
                     <span className={int.className}>WELCOME</span><br></br>
                 </div>
-                <div className="ml-1 mb-3 text-xl align-middle lg:text-2xl max-lg:justify-self-center max-lg:w-6/12 lg:w-9/12">
-                    <span className={garamond.className}>Hello, my name is Nolan Chu, a third-year data science & economics undergraduate at the University of California, San Diego.</span>
+                <div className="ml-8 mb-3 mt-24 text-xl align-middle lg:text-2xl max-lg:justify-self-center max-lg:w-6/12 lg:w-full">
+                    <span className={garamond.className}>
+                        Hello, my name is Nolan Chu, a third-year data science & economics undergraduate at the University of California, San Diego.
+                        <br/><br/>
+                        Hello, my name is Nolan Chu, a third-year data science & economics undergraduate at the University of California, San Diego.
+                    </span>
                 </div>   
             </div>
 
