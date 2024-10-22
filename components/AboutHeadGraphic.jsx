@@ -11,6 +11,7 @@ const AboutHeadGraphic = () => {
           <Image
             src="/React-icon.png"
             width={400}
+            height={200}
             className="h-8/12 align-middle mb-12"
             />
           <div className="text-8xl w-[.2rem] h-full bg-ncc-black ml-8 mr-8"></div>
