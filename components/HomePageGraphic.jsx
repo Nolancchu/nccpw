@@ -34,7 +34,7 @@ const HomePageGraphic = () => {
                 className="-top-32 "
             >
                 <ScrollingText
-                    text="Welcome to my website!" 
+                    text="Nolan Chu " 
                     className="text-ncc-black"
                     verticalAlign="top"
                 />
@@ -44,11 +44,11 @@ const HomePageGraphic = () => {
                 <div className="text-xl lg:text-[0rem]">
                     <span className={int.className}>WELCOME</span><br></br>
                 </div>
-                <div className="ml-8 mb-3 mt-24 text-xl align-middle lg:text-2xl max-lg:justify-self-center max-lg:w-6/12 lg:w-full">
-                    <span className={garamond.className}>
-                        Hello, my name is Nolan Chu, a third-year data science & economics undergraduate at the University of California, San Diego.
-                        <br/><br/>
-                        Hello, my name is Nolan Chu, a third-year data science & economics undergraduate at the University of California, San Diego.
+                <div className="ml-8 mb-3 mt-24 text-xl align-middle lg:text-3xl max-lg:justify-self-center max-lg:w-6/12 lg:w-full">
+                    <span className={garamond.className} >
+                            Hello, my name is Nolan Chu, a third-year data science & economics undergraduate at the University of California, San Diego.
+                            <br/><br/>
+                            In my portfolio website, you can take a look at some of my projects and experiences, get to know a little more about me, and find ways to get in contact. Hope to hear from you soon!
                     </span>
                 </div>   
             </div>

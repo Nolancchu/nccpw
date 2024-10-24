@@ -21,8 +21,8 @@ const Navigation = () => {
             transition={{ duration: 1.5 }}
           >
           <Navbar>
-            <Navbar.Brand href="/" className="ml-32">
-                    <FaReact size={35} className="md:scale-150 "/>
+            <Navbar.Brand href="/" className="ml-24">
+                <img src='/images/logo.png' className="w-16 h-16"></img>
             </Navbar.Brand>
           </Navbar>
         </motion.div>
@@ -32,7 +32,7 @@ const Navigation = () => {
           animate={{ opacity: 1}}
           transition={{ duration: 1.5 }}
         >
-          <div className="flex flex-row mt-4">
+          <div className="flex flex-row mt-7">
             <div className={int.className}>
               <Link  href="/portfolio" className="text-2xl text-ncc-black mr-4 ml-4 no-underline">Portfolio</Link>
             </div>

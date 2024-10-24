@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const BackgroundScrollingText = ({ 
     text = "This is scrolling text - ",
-    speed = 50,
+    speed = 60,
     direction = "left",
     className = "",
     opacity = "opacity-50",
@@ -53,7 +53,7 @@ return (
             transition: 'transform 0.1s linear'
         }}
         >
-        {text.repeat(20)}
+        {text.repeat(1000)}
         </div>
     </div>
     </div>
