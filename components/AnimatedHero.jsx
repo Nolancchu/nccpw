@@ -74,7 +74,7 @@ return (
         </h1>
     </div>
     <p className="text-ncc-black opacity-70 font-black text-2xl md:text-2xl">
-        Welcome, I'm Nolan Chu, a Data Science & Economics <br></br>undergraduate at the University of California, San Diego
+        Welcome, I'm Nolan Chu, a Data Science &amp; Economics <br></br>undergraduate at the University of California, San Diego
     </p>
     </div>
 </div>
