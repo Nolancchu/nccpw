@@ -5,7 +5,7 @@ const BackgroundScrollingText = ({
     speed = 60,
     direction = "left",
     className = "",
-    opacity = "opacity-50",
+    opacity = "opacity-20",
     zIndex = "z-0",
     backgroundColor = "bg-transparent",
     // New vertical positioning props
@@ -47,7 +47,7 @@ return (
     <div className={`relative w-full h-full pointer-events-none ${backgroundColor} ${zIndex}`}>
     <div className={`absolute  ${getVerticalStyles()}`} style={{ top: verticalPosition }}>
         <div 
-        className={`whitespace-nowrap w-full font-large text-9xl p-4 ${className} ${opacity}`}
+        className={`whitespace-nowrap w-full font-large text-8xl p-4 ${className} ${opacity}`}
         style={{ 
             transform: `translateX(${position}px)`,
             transition: 'transform 0.1s linear'
