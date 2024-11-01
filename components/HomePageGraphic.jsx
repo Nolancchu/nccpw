@@ -24,27 +24,16 @@ const HomePageGraphic = () => {
     transition={{ duration: 1 }}
     >
     <div className="styles.container">
-        <div className="flex flex-col relative overflow-x-hidden lg:flex-row w-full h-screen">
-        <StaticElement
-            verticalPosition=""
-            horizontalPosition="10px"
-            width="w-48"
-            zIndex="z-20"
-            className="-top-32"
-        >
-            <ScrollingText
-            text="Nolan Chu "
-            className="text-ncc-black"
-            verticalAlign="top"
-            verticalPosition="260px"
-            />
-        </StaticElement>
-        {/* Add the AnimatedHeroText inside the same container */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-4 w-full">
-            <AnimatedHeroText />
-        </div>
+    <div className="flex flex-col items-center relative overflow-x-hidden lg:flex-row w-full h-screen">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-32 w-full flex flex-col items-center">
+        <AnimatedHeroText />
+            <div className="animate-bounce">
+                <img src="/images/arrow.png" className="mx-auto w-[12%] translate-y-28" alt="arrow" />
+            </div>
         </div>
     </div>
+    </div>
+
     </motion.div>
 );
 };

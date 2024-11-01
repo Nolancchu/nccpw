@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <footer className="w-full relative">
-        <div className={`w-full h-[.1rem] bg-ncc-brown`} />
+        <div className={`w-full h-[.08rem] bg-ncc-brown`} />
         <div className="w-full flex flex-col items-center">
             <div className="h-14 mt-3 flex flex-row justify-center items-center">
 
@@ -38,8 +38,8 @@ const Footer = () => {
             
             </div>
 
-            <div className="text-ncc-brown mb-10">
-                Nolan Christopher Chu
+            <div className="text-ncc-black text-xs font-thin font-serif mb-10">
+                Copyright @ 2024 Nolan Christopher Chu. All rights reserved.
             </div>
         </div>
     </footer>

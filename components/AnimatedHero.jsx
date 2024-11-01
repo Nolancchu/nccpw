@@ -13,6 +13,7 @@ const [isDeleting, setIsDeleting] = useState(false);
 const [hasStarted, setHasStarted] = useState(false);
 
 const words = [
+"Nolan Chu",
 "Data Driven",
 "Team Oriented",
 "Growth Minded",
@@ -66,7 +67,7 @@ return (
 <div className="flex items-center justify-center">
     <div className="text-center">
     <div className="h-24 md:h-32 flex items-center justify-center mb-4">
-        <h1 className="text-9xl md:text-9xl font-bold text-ncc-black">
+        <h1 className="text-9xl md:text-[9rem] font-bold text-ncc-black">
         <div className={int.className}>
             {displayText}
             <span className="animate-pulse">|</span>

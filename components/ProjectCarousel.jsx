@@ -61,8 +61,8 @@ setTimeout(() => {
 };
 
 return (
-<div className="w-full min-h-[60vh] max-w-6xl mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
+<div className="w-full min-h-[80vh] items-start max-w-6xl mx-auto px-4">
+    <h2 className="text-6xl font-bold text-center mb-8">My Projects</h2>
     
     {/* Added relative positioning to create stacking context */}
     <div className="relative overflow-hidden bg-white dark:bg-gray-800 rounded-lg shadow-lg">
@@ -126,7 +126,7 @@ return (
         <button 
             onClick={prevProject}
             disabled={isAnimating}
-            className="p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors -ml-4 disabled:opacity-50 disabled:cursor-not-allowed pointer-events-auto"
+            className="p-2 rounded-full bg-ncc-grey dark:bg-gray-800 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors -ml-4 disabled:opacity-50 disabled:cursor-not-allowed pointer-events-auto"
             aria-label="Previous project"
         >
             <ChevronLeft className="w-6 h-6 text-gray-800 dark:text-white" />
@@ -134,7 +134,7 @@ return (
         <button 
             onClick={nextProject}
             disabled={isAnimating}
-            className="p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors -mr-4 disabled:opacity-50 disabled:cursor-not-allowed pointer-events-auto"
+            className="p-2 rounded-full bg-ncc-grey dark:bg-gray-800 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors -mr-4 disabled:opacity-50 disabled:cursor-not-allowed pointer-events-auto"
             aria-label="Next project"
         >
             <ChevronRight className="w-6 h-6 text-gray-800 dark:text-white" />
