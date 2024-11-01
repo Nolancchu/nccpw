@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image'
 
 const AboutHeadGraphic = () => {
   return (
@@ -13,18 +12,18 @@ const AboutHeadGraphic = () => {
                 
                 <div className="min-h-6"></div>
 
-                I'm Nolan Chu, a data scientist and economist, currently studying at the University of California, San Diego.
-                At the moment, I'm looking for internship oppurtunities, in both the tech and finance sectors, in order to hone my
+                I&apos;m Nolan Chu, a data scientist and economist, currently studying at the University of California, San Diego.
+                At the moment, I&apos;m looking for internship oppurtunities, in both the tech and finance sectors, in order to hone my
                 real-world skills and gain more hands-on experience. 
 
                 <div className="h-4"></div>
 
-                Born and raised in Arcadia, California, I've always held a fascination surrounding the stories hidden in data. 
-                It's what led me to pursue degrees in both data science &amp; economics &amp; it's what inspires me to do the work that I do.
+                Born and raised in Arcadia, California, I&apos;ve always held a fascination surrounding the stories hidden in data. 
+                It&apos;s what led me to pursue degrees in both data science &amp; economics &amp; it&apos;s what inspires me to do the work that I do.
 
                 <div className="h-4"></div>
 
-                On campus, when I'm not in class or working on projects, I'm writing and leading data science workshops as part of the 
+                On campus, when I&apos;m not in class or working on projects, I&apos;m writing and leading data science workshops as part of the 
                 Data Science Student Society, the premier undergraduate data science organization at UCSD. 
 
                 <div className="h-4"></div>
