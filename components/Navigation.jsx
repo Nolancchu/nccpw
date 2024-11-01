@@ -21,7 +21,11 @@ const Navigation = () => {
         >
         <Navbar>
           <Navbar.Brand href="/" className="ml-20 -mt-2.5">
-              <img src='/images/logo.png' className="w-16 h-16" alt="logo" />
+              <img 
+                  src='/images/logo.png' 
+                  className="w-16 h-16 transform transition-transform hover:scale-[1.15] duration-700" 
+                  alt="logo" 
+              />
           </Navbar.Brand>
         </Navbar>
       </motion.div>
@@ -31,17 +35,36 @@ const Navigation = () => {
         animate={{ opacity: 1}}
         transition={{ duration: 1.5 }}
       >
-        <div className="flex flex-col mr-20">
+        <div className="flex flex-col mr-12">
           <div className={int.className}>
-            <Link href="/portfolio" className="text-xl text-ncc-black mr-4 ml-4 no-underline">Portfolio</Link>
+            <Link 
+              href="/portfolio" 
+              className="text-lg text-ncc-black mr-4 ml-4 no-underline hover:text-ncc-beige transition-colors duration-[650ms]"
+            >
+              
+              Portfolio
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-ncc-black origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </Link>
           </div>
-          <div className="h-0.5 w-24 bg-ncc-black mt-0.5 mb-0.5 ml-3"></div>
+          <div className="h-0.5 w-24 bg-ncc-black ml-3"></div>
           <div className={int.className}>
-            <Link href="/experience" className="text-xl text-ncc-black mr-4 ml-4 no-underline">Experience</Link>
+            <Link 
+              href="/experience" 
+              className="text-lg text-ncc-black mr-4 ml-4 no-underline hover:text-ncc-beige transition-colors duration-[650ms]"
+            >
+              Experience
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-ncc-black origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </Link>
           </div>
-          <div className="h-0.5 w-24 bg-ncc-black mt-0.5 mb-0.5 ml-3"></div>
+          <div className="h-0.5 w-24 bg-ncc-black ml-3"></div>
           <div className={int.className}>
-            <Link href="/about" className="text-xl text-ncc-black mr-4 ml-4 no-underline">About</Link>
+            <Link 
+              href="/about" 
+              className="text-lg text-ncc-black mr-4 ml-4 no-underline hover:text-ncc-beige transition-colors duration-[650ms]"
+            >
+              About
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-ncc-black origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </Link>
           </div>
         </div>
       </motion.div>

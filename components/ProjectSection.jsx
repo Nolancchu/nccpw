@@ -40,7 +40,7 @@ const ProjectCards = [
   const ProjectSection = () => {
     return (
         <div>
-        <div className="flex w-full items-center justify-center">
+        <div className="flex w-full items-start justify-center">
           <Row className="w-11/12 items-center justify-center">
             {ProjectCards.map((card, index) => (
               <Col className="mb-20" xs={12} lg={6} key={index}>
