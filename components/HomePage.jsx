@@ -19,41 +19,37 @@ const int = Inter ({
 
 const HomePage = () => {
     return (
-    <div className="min-h-screen"> 
-        <div className="min-h-screen relative">
+        <div className="min-h-screen"> 
+            <div className="min-h-screen relative">
+                {/* Background layer */}
+                <div className="absolute inset-0 bg-ncc-beige bg-[radial-gradient(circle_950px_at_100%_200px,#015B52,transparent)] -z-10" />
+                
+                {/* Navigation */}
+                <div className="fixed top-0 left-0 right-0 z-30">
+                    <Navigation font={int} />
+                </div>
 
-        {/* Background layer */}
-        <div className="absolute inset-0 bg-ncc-beige bg-[radial-gradient(circle_900px_at_100%_200px,#015B52,transparent)] -z-10" />
-        
-        {/* Navigation with highest z-index */}
-        <div className="relative z-50">
-            <Navigation font={int} />
-        </div>
+                {/* Main content */}
+                <main className="relative">
+                    <section id="main" className="relative z-20">
+                        <HomePageGraphic/>
+                    </section> 
 
-        {/* Content layers with lower z-index */}
-        <section id="main">
-            <div className="relative z-20">
-                <HomePageGraphic/>
+                    <section id="about" className="relative z-10">
+                        <AboutHeadGraphic/>
+                    </section>
+                    
+                    <section id="projects" className="relative z-10">
+                        <ProjectCarousel/>
+                    </section>
+                </main>
+
+                <div className="relative z-10">
+                    <Footer/>
+                </div>
             </div>
-        </section> 
-        
-        <section id="about">
-            <div className="relative z-10">
-                <AboutHeadGraphic/>
-            </div>
-        </section>
-        
-        <section id="projects">
-            <div className="relative z-40">
-                <ProjectCarousel/>
-            </div>
-        </section>
-        <div className="relative z-30">
-            <Footer/>
         </div>
-    </div>
-</div>
-);
+    );
 };
     
 export default HomePage;

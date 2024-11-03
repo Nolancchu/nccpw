@@ -5,24 +5,24 @@ const ProjectCarousel = () => {
 const projects = [
 {
     title: "Datasaur Royale",
-    description: "A full-stack web application built with React and Node.js. Features include user authentication, real-time updates, and database integration.",
+    description: "With Python and Pygame my team and I created a simulation of natural selection utilizing genetic algorithms to simulate evolution within generations of dinosaurs.",
     technologies: ["Python", "Pygame"],
     image: "/images/datasaurthumb.png",
     link: "https://github.com/Nolancchu/DatasaurRoyale"
 },
 {
-    title: "Project 2",
-    description: "Mobile-first e-commerce platform with seamless payment integration and inventory management system.",
-    technologies: ["React Native", "Firebase", "Stripe", "Redux"],
-    image: "/api/placeholder/600/400",
-    link: "https://project2.com"
+    title: "NBA Logistic Regression Model",
+    description: "Logistic Regression Model meant to predict the winner of NBA games given a plethora of advanced statistics. Built webscraper to collect data from the ground up, scraping over 2 million points of data.",
+    technologies: ["Python", "Scikit-learn", "Flask", "Selenium"],
+    image: "/images/nbamodel.webp",
+    link: "https://github.com/Nolancchu/NBA-Prediction-Model"
 },
 {
-    title: "Project 3",
-    description: "Machine learning application for predictive analytics, featuring data visualization and automated reporting.",
-    technologies: ["Python", "TensorFlow", "pandas", "scikit-learn"],
-    image: "/api/placeholder/600/400",
-    link: "https://project3.com"
+    title: "200 Years: Analysing Champion Age",
+    description: "Statistical Analysis and predictive model concerning champion age - since release/rework - of champions in League of Legends and how that affects their winrate",
+    technologies: ["Python", "Pandas", "Scikit-learn", "Statistical Analysis"],
+    image: "/images/200years.png",
+    link: "https://nolancchu.github.io/200-Years/"
 }
 ];
 
@@ -62,7 +62,7 @@ setTimeout(() => {
 
 return (
 <div className="w-full min-h-[80vh] items-start max-w-6xl mx-auto px-4">
-    <h2 className="text-6xl font-bold text-center mb-8">My Projects</h2>
+    <h2 className="text-6xl font-bold text-center mb-8">Featured Projects</h2>
     
     {/* Added relative positioning to create stacking context */}
     <div className="relative overflow-hidden bg-white dark:bg-gray-800 rounded-lg shadow-lg">
@@ -101,7 +101,7 @@ return (
                 {projects[currentIndex].technologies.map((tech, index) => (
                 <span 
                     key={index}
-                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm"
+                    className="px-3 py-1 bg-ncc-green text-blue-800 dark:text-blue-100 rounded-full text-sm"
                 >
                     {tech}
                 </span>
@@ -113,7 +113,7 @@ return (
                 href={projects[currentIndex].link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 text-blue-600 dark:text-blue-400 hover:underline pointer-events-auto"
+                className="inline-block mt-4 text-ncc-black font-serif hover:underline pointer-events-auto"
             >
                 View Project →
             </a>
@@ -129,7 +129,7 @@ return (
             className="p-2 rounded-full bg-ncc-grey dark:bg-gray-800 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors -ml-4 disabled:opacity-50 disabled:cursor-not-allowed pointer-events-auto"
             aria-label="Previous project"
         >
-            <ChevronLeft className="w-6 h-6 text-gray-800 dark:text-white" />
+            <ChevronLeft className="w-6 h-5 text-gray-800 dark:text-white" />
         </button>
         <button 
             onClick={nextProject}
@@ -137,7 +137,7 @@ return (
             className="p-2 rounded-full bg-ncc-grey dark:bg-gray-800 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors -mr-4 disabled:opacity-50 disabled:cursor-not-allowed pointer-events-auto"
             aria-label="Next project"
         >
-            <ChevronRight className="w-6 h-6 text-gray-800 dark:text-white" />
+            <ChevronRight className="w-6 h-5 text-gray-800 dark:text-white" />
         </button>
         </div>
 

@@ -15,20 +15,25 @@ module.exports = {
           white: "#F7F7FF",
           brown: "#1E140B",
           green: "#3B6662",
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
       height: {
-        line: "2px"
-      }
+        line: "2px",
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out infinite',  
+      },
+      keyframes: {
+        wiggle: { 
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
         },
+      },
     },
   },
-  fontFamily: {
-    
-  },
   plugins: [],
-}
-}
 }

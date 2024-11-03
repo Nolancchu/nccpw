@@ -18,24 +18,35 @@ const int = Inter ({
 
 const HomePageGraphic = () => {
     return (
-    <motion.div
-    initial={{ opacity: 0}}
-    animate={{ opacity: 1}}
-    transition={{ duration: 1 }}
-    >
-    <div className="styles.container">
-    <div className="flex flex-col items-center relative overflow-x-hidden lg:flex-row w-full h-screen">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-32 w-full flex flex-col items-center">
-        <AnimatedHeroText />
-            <div className="animate-bounce">
-                <img src="/images/arrow.png" className="mx-auto w-[12%] translate-y-28" alt="arrow" />
+        <motion.div
+            initial={{ opacity: 0}}
+            animate={{ opacity: 1}}
+            transition={{ duration: 1 }}
+            className="relative z-20 pointer-events-auto w-full min-h-screen"
+        >
+            <div className="flex flex-col items-center justify-center w-full min-h-screen px-4 sm:px-6 lg:px-8">
+                {/* Main content container with responsive padding and centering */}
+                <div className="relative w-full max-w-7xl mx-auto">
+                    {/* Flex container for content alignment */}
+                    <div className="flex flex-col items-center justify-center">
+                        {/* Hero text section */}
+                        <div className="">
+                            <AnimatedHeroText />
+                        </div>
+                        
+                        {/* Bouncing arrow with responsive sizing */}
+                        <div className="animate-bounce mt-8 sm:mt-12 lg:mt-16">
+                            <img 
+                                src="/images/arrow.png" 
+                                className="w-8 sm:w-10 md:w-12 lg:w-14 mx-auto" 
+                                alt="scroll down arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    </div>
-
-    </motion.div>
-);
+        </motion.div>
+    );
 };
 
 export default HomePageGraphic;

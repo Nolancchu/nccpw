@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Navbar } from 'flowbite-react';
 import Link from 'next/link';
 
-
 const Navigation = ({ font }) => {
   const scrollToSection = (elementId) => {
     const element = document.getElementById(elementId);
@@ -21,7 +20,7 @@ const Navigation = ({ font }) => {
 
   return (
     <div className="fixed w-full h-auto">
-      <div className="flex flex-row justify-between items-center mt-8 z-40 mb-4">
+      <div className="flex flex-row justify-between items-center mt-8 mb-4">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -68,14 +67,14 @@ const Navigation = ({ font }) => {
             <div className="h-[.09rem] my-1 w-24 bg-ncc-black"></div>
 
             <div className={linkContainerClass}>
-              <Link 
-                href="#experience"
-                onClick={(e) => handleClick(e, 'experience')}
+                <motion.a
+                target="_blank"
                 className="text-xl text-ncc-black no-underline hover:text-ncc-beige transition-colors duration-[650ms]"
-              >
-                History
+                href="https://drive.google.com/file/d/1rKOQsn6qe_hPNpx_q1M0BY-Sdgua1d26/view?usp=sharing"
+                >
+                Resume
+                </motion.a>
                 <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-ncc-black origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-              </Link>
             </div>
           </div>
         </motion.div>
