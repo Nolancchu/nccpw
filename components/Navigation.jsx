@@ -56,6 +56,18 @@ const Navigation = ({ font }) => {
 
             <div className={linkContainerClass}>
               <Link 
+                href="#experience"
+                onClick={(e) => handleClick(e, 'experience')}
+                className="text-xl text-ncc-black no-underline hover:text-ncc-beige transition-colors duration-[650ms]"
+              >
+                Experience
+                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-ncc-black origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+              </Link>
+            </div>
+            <div className="h-[.09rem] my-1 w-24 bg-ncc-black"></div>
+
+            <div className={linkContainerClass}>
+              <Link 
                 href="#projects"
                 onClick={(e) => handleClick(e, 'projects')}
                 className="text-xl text-ncc-black no-underline hover:text-ncc-beige transition-colors duration-[650ms]"
@@ -70,7 +82,7 @@ const Navigation = ({ font }) => {
                 <motion.a
                 target="_blank"
                 className="text-xl text-ncc-black no-underline hover:text-ncc-beige transition-colors duration-[650ms]"
-                href="https://drive.google.com/file/d/1rKOQsn6qe_hPNpx_q1M0BY-Sdgua1d26/view?usp=sharing"
+                href="https://drive.google.com/file/d/1CQogbAPU8DW3aonNhC2jbJdzZ2Q6_CoI/view?usp=sharing"
                 >
                 Resume
                 </motion.a>

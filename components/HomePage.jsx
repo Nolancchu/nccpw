@@ -4,6 +4,7 @@ import Footer from "@/components/Footer"
 import HomePageGraphic from "@/components/HomePageGraphic";
 import AboutHeadGraphic from "@/components/AboutHeadGraphic";
 import ProjectCarousel from "@/components/ProjectCarousel";
+import Experience from "@/components/Experience";
 import { Cormorant_Garamond } from 'next/font/google';
 import { Inter } from "next/font/google";
 
@@ -38,7 +39,9 @@ const HomePage = () => {
                     <section id="about" className="relative z-10">
                         <AboutHeadGraphic/>
                     </section>
-                    
+                    <section id="experience" className="relative z-10">
+                        <Experience/>
+                    </section>
                     <section id="projects" className="relative z-10">
                         <ProjectCarousel/>
                     </section>
