@@ -56,6 +56,13 @@ const ExperienceCard = ({ role, company, duration, description, technologies, lo
 const Experience = () => {
 const experiences = [
 {
+    role: "Research Assistant",
+    company: "Joshua Blumenstock's Group",
+    duration: "Winter 2024 - Present",
+    description: "Automated data cleaning, quality, and aggregation pipelines concerning government surveys for use in poverty alleviation research.",
+    logoUrl: "/images/research-Logo.png" 
+},
+{
     role: "Data Science Intern",
     company: "IDX Exchange",
     duration: "Winter 2024 - Present",
