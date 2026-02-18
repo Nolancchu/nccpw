@@ -66,7 +66,7 @@ return (
         {/* Image */}
         <div className="w-48 sm:w-64 md:w-80 lg:w-[39%] order-2">
         <img
-            src="/images/mephoto.jpg"
+            src="/images/headshot-2026.jpg"
             className="w-full rounded-full"
             alt="professional headshot"
         />
